@@ -64,7 +64,7 @@
             class="drive-item"
             @click="selectDrive(drive)"
           >
-            <el-icon><HardDrive /></el-icon>
+            <el-icon><Cpu /></el-icon>
             <span>{{ drive }}</span>
           </div>
         </div>
@@ -106,7 +106,7 @@ import {
   Delete,
   Folder,
   FolderOpened,
-  HardDrive
+  Cpu
 } from '@element-plus/icons-vue'
 
 const props = defineProps({
