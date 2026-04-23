@@ -41,7 +41,7 @@
             @click="handleOrganize"
             class="organize-btn"
           >
-            <el-icon><MagicStick /></el-icon>
+            <el-icon><Edit /></el-icon>
             开始整理
           </el-button>
 
@@ -112,7 +112,7 @@
 
     <el-loading-mask :visible="isScanning">
       <div class="loading-content">
-        <el-icon class="loading-icon"><Loading /></el-icon>
+        <el-icon class="loading-icon"><Refresh /></el-icon>
         <p>正在扫描照片...</p>
       </div>
     </el-loading-mask>
@@ -124,8 +124,8 @@ import { ref, computed } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import {
   Camera,
-  MagicStick,
-  Loading
+  Edit,
+  Refresh
 } from '@element-plus/icons-vue'
 
 import FolderSelector from './components/FolderSelector.vue'
